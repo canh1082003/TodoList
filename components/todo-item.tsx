@@ -44,7 +44,11 @@ export default function TodoItem({ todo, dragHandleProps }: TodoItemProps) {
   }
 
   return (
-    <div className={`flex items-center p-3 rounded-lg border ${todo.completed ? "bg-gray-50" : "bg-gray-100"}`}>
+    <div className={`flex items-center p-3 rounded-lg border 
+  ${todo.completed
+        ? "bg-white dark:bg-gray-700"
+        : "bg-gray-100 dark:bg-gray-800"
+      } text-black dark:text-white`}>
       <span
         {...dragHandleProps}
         style={{
