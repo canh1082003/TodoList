@@ -1,0 +1,43 @@
+body {
+  background: #181818;
+  color: #f1f1f1;
+  transition: background 0.3s, color 0.3s;
+}
+
+.dark body,
+body.dark {
+  background: #181818;
+  color: #f1f1f1;
+}
+
+.dark .bg-white,
+.bg-white.dark {
+  background-color: #232323 !important;
+  color: #f1f1f1 !important;
+}
+
+.dark .text-gray-500,
+.text-gray-500.dark {
+  color: #b0b0b0 !important;
+}
+
+.dark .bg-emerald-600 {
+  background-color: #065f46 !important;
+}
+
+.dark .text-emerald-100 {
+  color: #bbf7d0 !important;
+}
+
+.dark input,
+.dark textarea,
+.dark select,
+.dark button {
+  background: #232323;
+  color: #f1f1f1;
+  border: 1px solid #444;
+}
+
+.dark .shadow-lg {
+  box-shadow: 0 4px 24px 0 #0008;
+}
